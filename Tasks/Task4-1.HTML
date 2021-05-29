@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+   
+<script>
+
+let upd  =  document.getElementById('update').addEventListener('click', update);
+        function update(){
+            name = prompt("Введите имя");
+            age = prompt("Введите возраст");
+            sex = prompt("Введите пол");
+            tel = prompt("Введите номер телефона");
+        }
+var  tel;
+    tel = prompt("Введите номер телефона");
+    
+      $("#tel").focus();
+    
+      document.getElementById("language").checked = angl;
+
+      if (document.getElementById("education").checked ==true && document.getElementById("asu").checked ==true)
+            {
+                var text ='<p class="stroke">ВЫ НАМ ПОДОШЛИ!</p>'
+                x.innerHTML = text;
+                x.style.display = "block";
+            }
+
+            $('#education').attr('disabled',true);
+           $('#mathematic').attr('disabled',true);
+           $('#asu').attr('disabled',true);
+           $('#cutting').attr('disabled',true);
+           $('#programming').attr('disabled',true);
+           $('#language').attr('disabled',true);
+
+           $('#startTest').hide();
+
+           let start = document.getElementById("startTest").addEventListener("click",test);
+
+      </script>
+     <body>
+        <div class="row">
+            <div class="input-field col s12">
+                 <input id="Name" type="text" class="validate">
+                 <p><label for="">Name</label></p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="input-field col s12">
+                      <input id="age" type="text" class="validate">
+                      <p><label for="">Your age</label></p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="input-field col s12">
+                          <input id="gender" type="text" class="validate">
+                          <p><label for="">Gender</label></p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="input-field col s12">
+                              <input id="tel" type="text" class="validate">
+                              <p><label for="">Номер телефона</label></p>
+                            </div>
+                        </div>
+
+            
+        <p><input type="checkbox" id="language"> <label for="language">Высшее образование</label></p>  
+        <p><input type="checkbox" id="language"> <label for="language">Знание математики</label></p>   
+        <p><input type="checkbox" id="language"> <label for="language">Знание физики</label></p>    
+        <p><input type="checkbox" id="language"> <label for="language">Знание теормеха</label></p>    
+        <p><input type="checkbox" id="language"> <label for="language">Знание программирования</label></p>    
+
+    </body>
+    
